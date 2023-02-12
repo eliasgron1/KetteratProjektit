@@ -39,7 +39,7 @@ form {
 h2 {
 
     text-align: center;
-    color: #000000;
+    color: #3C4048;
     margin-bottom: 40px;
 
 }
@@ -62,7 +62,7 @@ input {
 
 label {
 
-    color: #000000;
+    color: #3C4048;
 
     font-size: 18px;
 
@@ -78,7 +78,7 @@ button {
 
     padding: 10px 15px;
 
-    color: #000000;
+    color: #3C4048;
 
     border-radius: 5px;
 
@@ -98,7 +98,7 @@ button:hover{
 
    background: #ffffff;
 
-   color: #000000;
+   color: #3C4048;
 
    padding: 10px;
 
@@ -114,7 +114,7 @@ h1 {
 
     text-align: center;
     
-    color: #eee5e2;
+    color: #3C4048;
 
 }
 
@@ -122,11 +122,11 @@ a {
 
     float: right;
 
-    background: #7C4935;
+    background: #3C4048;
 
     padding: 10px 15px;
 
-    color: #fff;
+    color: #ffffff;
 
     border-radius: 10px;
 
