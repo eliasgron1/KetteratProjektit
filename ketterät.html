@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      .kettu table, .kettu tr, .kettu td {color:rgb(3, 3, 19); background-color: ligtgray; border:1px solid black; font-family:Alatsi; 
+font-size:11.5px} 
+.kettu th {color:rgb(70, 29, 50);border:3px solid rgb(62, 91, 100); font-family:Alatsi}
+
+    </style>
+  </head>
+  <body>
+    <h1>Heading</h1>
+    <p>Text in paragraph</p>
+    <a href="https://portal.vamk.fi/pluginfile.php/943260/mod_resource/content/1/ketterat.txt">museo</a>
+
+    <div class="kettu">
+      <h3> Automuseo, Pietarsaari </h3>
+      <table> 
+      <tr>
+      <th> Lippu </th>
+      <th> Kpl </th>
+      <th> Yht € </th> 
+      </tr>
+
+      <tr>
+      <td> Aikuinen, alennus, 10e </td>
+      <td> 1 </td>
+      <td> 10€ </td>
+      </tr>
+
+      <tr>
+      <td> Aikuinen, normaali, 12e</td>
+      <td> 2 </td>
+      <td> 24€ </td>
+     </tr>
+
+     <tr>
+      <td> Aikuinen, eläkeläinen, 8e </td>
+      <td> 2</td>
+      <td> 16€ </td>
+     </tr>
+
+     <tr>
+      <td> Lapsi, 5e  </td>
+      <td> 2 </td>
+      <td> 10€ </td>
+     </tr>
+
+      </table>
+      </div>
+
+      <div class="kettu">
+        <h3> Luontomuseo, Vaasa </h3>
+        <table> 
+        <tr>
+        <th> Lippu </th>
+        <th> Kpl </th>
+        <th> Yht € </th> 
+        </tr>
+  
+        <tr>
+        <td> Aikuinen, alennus, 10e </td>
+        <td> 0 </td>
+        <td> 0€ </td>
+        </tr>
+  
+        <tr>
+        <td> Aikuinen, normaali, 12e</td>
+        <td> 3 </td>
+        <td> 36€ </td>
+       </tr>
+  
+       <tr>
+        <td> Aikuinen, eläkeläinen, 8e </td>
+        <td> 3 </td>
+        <td> 24€ </td>
+       </tr>
+  
+       <tr>
+        <td> Lapsi, 5e  </td>
+        <td> 4 </td>
+        <td> 20€ </td>
+       </tr>
+
+    </table>
+    </div>
+  
+       <div class="kettu">
+        <h3> Lasten museo, Vaasa </h3>
+        <table> 
+        <tr>
+        <th> Lippu </th>
+        <th> Kpl </th>
+        <th> Yht € </th> 
+        </tr>
+  
+        <tr>
+        <td> Aikuinen, alennus, 10e </td>
+        <td> 0 </td>
+        <td> 0€ </td>
+        </tr>
+  
+        <tr>
+        <td> Aikuinen, normaali, 12e</td>
+        <td> 3 </td>
+        <td> 36€ </td>
+       </tr>
+  
+       <tr>
+        <td> Aikuinen, eläkeläinen, 8e </td>
+        <td> 3 </td>
+        <td> 24€ </td>
+       </tr>
+  
+       <tr>
+        <td> Lapsi, 5e  </td>
+        <td> 6 </td>
+        <td> 30€ </td>
+       </tr>
+        </table>
+        </div>
+
+    <script>
+      const xmlhttp = new XMLHttpRequest();
+
+xmlhttp.onload = function() {
+  const myObj = JSON.parse(this.responseText);
+  document.getElementById("demo").innerHTML = myObj.name;
+}
+xmlhttp.open("GET", "https://portal.vamk.fi/pluginfile.php/943260/mod_resource/content/1/ketterat.txt");
+xmlhttp.send();
+    </script>
+  </body>
+</html>
