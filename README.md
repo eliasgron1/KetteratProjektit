@@ -8,5 +8,5 @@ Push: git push -u origin master
 Remove: git rm "tiedosto minkä haluat poistaa"
 Pull: git pull origin master
 
-linkki sivulle : https://www.cc.puv.fi/~e2203097/ketterat/
+linkki sivulle : https://www.cc.puv.fi/~e2203097/KetteratProjekti/
 tunnukset : admin, kissakoira123
